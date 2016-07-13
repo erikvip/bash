@@ -7,7 +7,7 @@ SCRIPT_FILE=${0};
 VERBOSE=${VERBOSE:-};
 
 source tputcolors.bash
-source optparse/optparse.bash;
+PATH=`dirname "${BASH_SOURCE}"`/optparse:$PATH source optparse.bash;
 #source ~/work/optparse/optparse.bash
 
 #optparse.define long=template-bash-help desc="Simple true / false (string)" variable=REMOVE_SOURCE_FILE value="true" default="false"
